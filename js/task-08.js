@@ -15,20 +15,16 @@ function handleFormSubmit(event) {
         Password: password
     };
 
-    for  (const formInput of formInputs) {
-            if (formInput.value === '') {
-                alert('все поля должны быть заполнены');
+    if (mail === '' || password ==='') {
+                    alert('все поля должны быть заполнены');
+                    
                 
-                break;
-            }
-            else  {
-                array.push(formInput);
-            }
- 
     }
-     if (array.length === formInputs.length) {
-                console.log(formData);
+    else {
+        console.log(formData);
+            
      }
+    
     
     form.reset()
     
