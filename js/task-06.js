@@ -5,11 +5,13 @@ inputText.addEventListener('blur',handleInputText)
 function handleInputText(even) {
     if (even.currentTarget.value.length != inputText.getAttribute('data-length')) {
 
-        inputText.classList.add('invalid')
-        inputText.classList.remove('valid')
+        inputText.classList.remove('valid');
+        inputText.classList.add('invalid');
     }
-    else 
+    else {
+        inputText.classList.remove('invalid');
+        inputText.classList.add('valid');
+    }
         
-        inputText.classList.remove('invalid')
-        inputText.classList.add('valid')
+        
 }

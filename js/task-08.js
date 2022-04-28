@@ -24,8 +24,10 @@ function handleFormSubmit(event) {
             
      }
     
+    if (mail !== '' && password !== '') {
+        form.reset()
+     }
     
-    form.reset()
     
     
 }
